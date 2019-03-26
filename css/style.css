@@ -142,7 +142,7 @@ a.no-underline, a.no-underline:hover {
 
 #home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/img/bg-img.jpg");
+    url("../img/bg-img.jpg");
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
