@@ -195,7 +195,7 @@ section {
   border-bottom: 2px solid red;
 }
 .tech-card.database {
-  border-bottom: 2px solid yellow;
+  border-bottom: 2px solid #f9bf3f;
 }
 .tech-card.mobile {
   border-bottom: 2px solid blue;
@@ -215,6 +215,10 @@ section {
   .main {
     margin: 0;
   }
+
+  .tech-card {
+    margin: 20px 40px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -230,6 +234,13 @@ section {
     font-size: 14px;
   }
 }
+
+@media (min-width: 1024px) {
+  .card-md-lg-plr {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 /* Media css Ends */
 
 /* Flat Icon Colors Starts */
@@ -239,7 +250,7 @@ section {
 }
 
 .flaticon-database {
-  color: yellow;
+  color: #f9bf3f;
 }
 
 .flaticon-smartphone {
