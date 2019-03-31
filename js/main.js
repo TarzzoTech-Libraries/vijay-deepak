@@ -60,5 +60,5 @@
   setNavActive();
   setInitialDivHeight();
   setHomeText();
-  educationCollapse();
+  // educationCollapse();
 })();
