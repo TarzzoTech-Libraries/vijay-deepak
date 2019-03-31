@@ -163,6 +163,10 @@ section {
   font-family: "Quicksand", Arial, sans-serif;
 }
 
+.clearfix {
+  overflow: auto;
+}
+
 /* Right Side Style Ends */
 
 @media (max-width: 500px) {
