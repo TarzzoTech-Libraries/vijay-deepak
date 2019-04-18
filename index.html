@@ -2,29 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Vijay Deepak</title>
-    <link rel="icon" href="./img/icon/vjsd-black.png" />
+    <link rel="icon" href="/img/icon/vjsd-white.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Quicksand"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/font/flaticon.css" />
-    <link rel="stylesheet" href="./css/lib/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/custom-bootstrap.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/about.css" />
-    <link rel="stylesheet" href="./css/service-section.css" />
-    <link rel="stylesheet" href="./css/skills.css" />
-    <link rel="stylesheet" href="./css/education.css" />
-    <link rel="stylesheet" href="./css/experience.css" />
-    <link rel="stylesheet" href="./css/work.css" />
-    <link rel="stylesheet" href="./css/contact.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" href="/css/font/flaticon.css" />
+    <link rel="stylesheet" href="/css/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/custom-bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/service-section.css" />
+    <link rel="stylesheet" href="/css/skills.css" />
+    <link rel="stylesheet" href="/css/education.css" />
+    <link rel="stylesheet" href="/css/experience.css" />
+    <link rel="stylesheet" href="/css/work.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="manifest" href="/manifest.json">
 
-    <script src="./js/lib/jquery.min.js"></script>
-    <script src="./js/lib/bootstrap.min.js"></script>
+    <script src="/js/lib/jquery.min.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="PWAGram">
+    <link rel="apple-touch-icon" href="/img/icon/manifest/vjsd-57x57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="/img/icon/manifest/vjsd-60x60.png" sizes="60x60">
+    <link rel="apple-touch-icon" href="/img/icon/manifest/vjsd-72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="/img/icon/manifest/vjsd-76x76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="/img/icon/manifest/vjsd-114x114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="/img/icon/manifest/vjsd-120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="/img/icon/manifest/vjsd-144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="/img/icon/manifest/vjsd-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="/img/icon/manifest/vjsd-180x180.png" sizes="180x180">
+    <meta name="msapplication-TileImage" content="/img/icon/manifest/vjsd-144x144.png">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="theme-color" content="#3f51b5">
   </head>
   <body>
     <div class="container-fluid">
@@ -35,35 +53,35 @@
         >
           <div class="profile-block">
             <img
-              src="./img/profile-pic.jpg"
+              src="/img/profile-pic.jpg"
               class="rounded-circle profile-pic"
               alt="Profile Picture"
             />
             <h2 class="profile-name">Vijayasekhar Deepak</h2>
             <p class="profile-desc">Web Developer</p>
           </div>
-          <div class="nav-block">
+          <div class="nav-block" id="nav-block">
             <ul class="nav-list" id="nav-list">
               <li class="nav-list-item active">
                 <a href="#home">Home</a>
               </li>
               <li class="nav-list-item">
-                <a href="#about">About</a>
+                <a class="nav-list-link" href="#about">About</a>
               </li>
               <li class="nav-list-item">
-                <a href="#service">Service</a>
+                <a class="nav-list-link" href="#service">Service</a>
               </li>
               <li class="nav-list-item">
-                <a href="#skills">Skills</a>
+                <a class="nav-list-link" href="#skills">Skills</a>
               </li>
               <li class="nav-list-item">
-                <a href="#education">Education</a>
+                <a class="nav-list-link" href="#education">Education</a>
               </li>
               <li class="nav-list-item">
-                <a href="#experience">Experience</a>
+                <a class="nav-list-link" href="#experience">Experience</a>
               </li>
               <li class="nav-list-item">
-                <a href="#work">Work</a>
+                <a class="nav-list-link" href="#work">Work</a>
               </li>
               <!-- <li class="nav-list-item">
                 <a href="#contact">Contact</a>
@@ -72,6 +90,7 @@
           </div>
           <div class="footer">
             <p class="copy-rights" id="copy-rights"></p>
+            <p>Powered by <span class="pwa">P<span class="pwa-w">W</span>A</span></p>
             <div class="professional-accounts">
               <a
                 href="https://www.linkedin.com/in/vijay-deepak-17276bb3/"
@@ -96,7 +115,7 @@
                 title="NPM"
               >
                 <img
-                  src="./img/project/Npm-logo.svg"
+                  src="/img/project/Npm-logo.svg"
                   class="npm-logo"
                   alt="npm"
                 />
@@ -302,8 +321,8 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 py-4">
+                  <span class="skill-title">HTML</span>
                   <div class="skills-progress-bars">
-                    HTML
                     <div class="progress">
                       <div class="progress-bar bg-danger" style="width:40%">
                         40%
@@ -312,8 +331,8 @@
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 py-4">
+                  <span class="skill-title">CSS</span>
                   <div class="skills-progress-bars">
-                    CSS
                     <div class="progress">
                       <div class="progress-bar bg-css" style="width:40%">
                         40%
@@ -324,18 +343,18 @@
               </div>
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 py-4">
+                  <span class="skill-title">JavaScript</span>
                   <div class="skills-progress-bars">
-                    JavaScript
                     <div class="progress">
-                      <div class="progress-bar bg-warning" style="width:60%">
-                        60%
+                      <div class="progress-bar bg-warning" style="width:50%">
+                        50%
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 py-4">
+                  <span class="skill-title">Sharepoint</span>
                   <div class="skills-progress-bars">
-                    Sharepoint
                     <div class="progress">
                       <div class="progress-bar bg-sharepoint" style="width:30%">
                         30%
@@ -346,21 +365,21 @@
               </div>
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 py-4">
+                  <span class="skill-title">ReactJS</span>
                   <div class="skills-progress-bars">
-                    ReactJs
                     <div class="progress">
-                      <div class="progress-bar bg-reactjs" style="width:60%">
-                        60%
+                      <div class="progress-bar bg-reactjs" style="width:50%">
+                        50%
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 py-4">
+                  <span class="skill-title">Angular</span>
                   <div class="skills-progress-bars">
-                    Angular
                     <div class="progress">
-                      <div class="progress-bar bg-danger" style="width:30%">
-                        30%
+                      <div class="progress-bar bg-danger" style="width:20%">
+                        20%
                       </div>
                     </div>
                   </div>
@@ -368,8 +387,8 @@
               </div>
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 py-4">
+                  <span class="skill-title">Ionic</span>
                   <div class="skills-progress-bars">
-                    Ionic
                     <div class="progress">
                       <div class="progress-bar bg-ionic" style="width:20%">
                         20%
@@ -378,8 +397,8 @@
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 py-4">
+                  <span class="skill-title">React Native</span>
                   <div class="skills-progress-bars">
-                    React Native
                     <div class="progress">
                       <div class="progress-bar bg-reactjs" style="width:20%">
                         20%
@@ -390,8 +409,8 @@
               </div>
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 py-4">
-                  <div class="skills-progress-bars">
-                    NodeJs
+                  <span class="skill-title">NodeJS</span>
+                  <div class="skills-progress-bars">                    
                     <div class="progress">
                       <div class="progress-bar bg-success" style="width:30%">
                         30%
@@ -556,15 +575,15 @@
                               </span>
                               <div class="clearfix"></div>
                               <span class="project-client-title">
-                                Pharmacy company
+                                India's Pharmacy company
                               </span>
                             </div>
                           </div>
                           <div class="work-project-details wpm">
                             <div class="details">
-                                <div class="details-title">Work Permit Manager ( WPM )</div>
+                                <div class="details-title">WPM</div>
                                 <div class="details-description">
-                                    It is an internal Application of a Pharmacy company, to monitor the regular activities on daily bases of their employees.                                    
+                                  WPM (Work Permit Manager) is an internal Application of a Pharmacy company, to monitor the regular activities on daily bases of their employees.                                    
                                 </div>
                             </div>
                           </div>
@@ -579,15 +598,15 @@
                                   </span>
                                   <div class="clearfix"></div>
                                   <span class="project-client-title">
-                                    Pharmacy company
+                                    India's Pharmacy company
                                   </span>
                                 </div>
                           </div>
                           <div class="work-project-details uppm">
                             <div class="details">
-                                <div class="details-title">Ukraine Product Portfolio Management ( UPPM )</div>
+                                <div class="details-title">UPPM</div>
                                 <div class="details-description">
-                                    It is an Pharmacy company Application for medicine Approval process in
+                                  UPPM (Ukraine Product Portfolio Management) is an Pharmacy company Application for medicine Approval process in
                                         Ukraine. It has 9 mandatory approval processes and has 3 optional processes for design
                                         approval processes.                                
                                 </div>
@@ -606,6 +625,8 @@
         <!-- Right Side Ends -->
       </div>
     </div>
-    <script src="./js/main.js"></script>
+    <script src="/js/promise.js"></script>
+    <script src="/js/fetch.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

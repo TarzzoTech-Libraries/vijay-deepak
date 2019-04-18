@@ -167,6 +167,14 @@ section {
   overflow: auto;
 }
 
+.pwa {
+  font-family: 'Bitter', serif;
+}
+
+.pwa-w {
+  color:  #1a1aff;
+}
+
 /* Right Side Style Ends */
 
 @media (max-width: 500px) {

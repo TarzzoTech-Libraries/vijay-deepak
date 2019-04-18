@@ -15,7 +15,7 @@
 
 .descriptive-card .html {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/project/html.png");
+    url("/img/project/html.png");
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 
 .descriptive-card .css {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/project/css.png");
+    url("/img/project/css.png");
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@
 
 .descriptive-card .js {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/project/js.png");
+    url("/img/project/js.png");
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -48,7 +48,7 @@
 
 .descriptive-card .reactjs {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/project/reactjs.png");
+    url("/img/project/reactjs.png");
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@
 
 .descriptive-card .csharp {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/project/c-sharp.png");
+    url("/img/project/c-sharp.png");
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -70,7 +70,7 @@
 
 .descriptive-card .sql {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/project/sql.png");
+    url("/img/project/sql.png");
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -81,7 +81,7 @@
 
 .descriptive-card .sharepoint {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/project/sp.png");
+    url("/img/project/sp.png");
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -92,7 +92,7 @@
 
 .project-client {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/project-client-bg-img.jpg");
+    url("/img/project-client-bg-img.jpg");
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;

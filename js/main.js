@@ -1,4 +1,26 @@
 (function() {
+  var deferredPrompt;
+  if (!window.Promise) {
+    window.Promise = Promise;
+  }
+
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+    .register("../sw.js")
+    .then(() => {
+      console.log("Service Worker Registered.");
+    })
+    .catch(err => {
+      console.log(err);
+    });
+  }
+
+  window.addEventListener("beforeinstallprompt", (event) => {
+    event.preventDefault();
+    deferredPrompt = event;
+    return false;
+  });
+
   const setCopyRights = function() {
     const copyRights = document.getElementById("copy-rights");
     copyRights.innerHTML = `©Copyright${new Date().getFullYear()}. All rights reserved.`;
@@ -55,10 +77,30 @@
     }
   };
 
+  const scrollTop = function() {
+    document.addEventListener("scroll", () => {
+      var scrollPos = $(document).scrollTop();
+      $(".nav-block a").each(function() {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (
+          refElement.position().top <= scrollPos &&
+          refElement.position().top + refElement.height() > scrollPos
+        ) {
+          $(".nav-list-item").removeClass("active");
+          currLink.parent().addClass("active");
+        } else {
+          currLink.parent().removeClass("active");
+        }
+      });
+    });
+  };
+
   // Call On load
   setCopyRights();
   setNavActive();
   setInitialDivHeight();
   setHomeText();
   // educationCollapse();
+  scrollTop();
 })();
