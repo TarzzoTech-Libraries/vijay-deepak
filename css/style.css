@@ -9124,17 +9124,21 @@ textarea.form-control {
     width: 50px;
     display: block;
     float: left;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(244, 240, 240, 0.8);
     border-radius: 50%;
     position: relative; }
-    .ftco-footer-social li a span {
-      position: absolute;
-      font-size: 26px;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+    .ftco-footer-social li a svg {
+      width: 40px;
+      height: 40px;
+      margin-left: 0.3em;
+      margin-top: 0.35rem;
+    }
+    .ftco-footer-social li a.linked-in svg {
+      width: 30px;
+      height: 30px;
+      margin-left: 0.7em;
+      margin-top: 0.4rem;
+    }
     .ftco-footer-social li a:hover {
       color: #fff; }
 
